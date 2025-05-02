@@ -5,12 +5,8 @@
 Welcome to the repository of **CODEx** — where coders are built, ideas are transformed, and excellence is our habit.  
 We focus on everything from **DSA practice**, **development workshops**, **open-source contributions**, to **hackathons & coding contests**!
 
----
-
 ## 🌐 Website Live Link
 [https://codex-gecsiwan.com](#) (Coming Soon)
-
----
 
 ## 📚 About CODEx
 
@@ -18,8 +14,6 @@ We focus on everything from **DSA practice**, **development workshops**, **open-
 We aim to empower students with skills in **problem-solving**, **software development**, and **real-world tech collaboration**.  
 
 Join us and become part of a coder’s revolution! ✨
-
----
 
 ## 🚩 Features
 
@@ -30,16 +24,12 @@ Join us and become part of a coder’s revolution! ✨
 - 🎓 **MNC Placement Prep & Mentoring**  
 - 🤝 **Collaborations with Other Tech Communities**
 
----
-
 ## 🏗️ Tech Stack (For this Website)
 
 - **Frontend**: HTML, CSS, JavaScript / React.js  
 - **Backend** (Optional): Node.js, Express.js  
 - **Database** (Optional): MongoDB / Firebase  
 - **Deployment**: Netlify / Vercel / GitHub Pages
-
----
 
 ## 🚀 Getting Started
 
@@ -64,8 +54,6 @@ npm install
 npm start
 ```
 
----
-
 ## 🤝 Contributing
 
 We love contributors! ❤️
@@ -77,27 +65,19 @@ Want to improve this website or add features? Just follow these steps:
 4. **Push** to the branch (`git push origin feature/YourFeature`)
 5. \*\*Open a Pull Request\`
 
----
-
 ## 📢 Join CODEx
 
 If you’re from GEC Siwan and want to be part of CODEx, fill out our [Membership Form](#) (Coming soon).
 Follow us on our socials for updates on events and sessions!
 
----
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
 
 ## 🤖 Maintainers
 
 * \[Vikash Kumar] (Maintainer)
 
----
 
 > **CODEx**: Code. Create. Contribute. Conquer. 🚀
-
-```
