@@ -6,7 +6,7 @@ Welcome to the repository of **CODEx** — where coders are built, ideas are tra
 We focus on everything from **DSA practice**, **development workshops**, **open-source contributions**, to **hackathons & coding contests**!
 
 ## 🌐 Website Live Link
-[https://codex-gecsiwan.com](#) (Coming Soon)
+[https://codex-gecsiwan.in](#) (Coming Soon)
 
 ## 📚 About CODEx
 
@@ -77,7 +77,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤖 Maintainers
 
-* \[Vikash Kumar] (Maintainer)
+* \[Vikash Kumar](Maintainer)
 
 
 > **CODEx**: Code. Create. Contribute. Conquer. 🚀
