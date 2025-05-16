@@ -1,83 +1,36 @@
-# CODEx 🚀 
-**Coders Of Development & Excellence**  
-*Official Coding Club of GEC Siwan*
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to the repository of **CODEx** — where coders are built, ideas are transformed, and excellence is our habit.  
-We focus on everything from **DSA practice**, **development workshops**, **open-source contributions**, to **hackathons & coding contests**!
+## Getting Started
 
-## 🌐 Website Live Link
-[https://codex-gecsiwan.in](#) (Coming Soon)
-
-## 📚 About CODEx
-
-> CODEx is not just a club — it's a **movement** to create a coding culture in GEC Siwan.  
-We aim to empower students with skills in **problem-solving**, **software development**, and **real-world tech collaboration**.  
-
-Join us and become part of a coder’s revolution! ✨
-
-## 🚩 Features
-
-- 💻 **DSA Practice Sessions**  
-- 🛠️ **Development Workshops (Frontend, Backend, Full Stack)**  
-- 🌐 **Open Source Contribution Drives**  
-- ⚔️ **Hackathons & Coding Contests**  
-- 🎓 **MNC Placement Prep & Mentoring**  
-- 🤝 **Collaborations with Other Tech Communities**
-
-## 🏗️ Tech Stack (For this Website)
-
-- **Frontend**: HTML, CSS, JavaScript / React.js  
-- **Backend** (Optional): Node.js, Express.js  
-- **Database** (Optional): MongoDB / Firebase  
-- **Deployment**: Netlify / Vercel / GitHub Pages
-
-## 🚀 Getting Started
-
-### 1. Fork this repo 🍴
-Click on the top right "Fork" button.
-
-### 2. Clone your forked repo
-```bash
-git clone https://github.com/your-username/codex-website.git
-cd codex-website
-````
-
-### 3. Install dependencies (if using React/Node)
+First, run the development server:
 
 ```bash
-npm install
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### 4. Run the project
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-npm start
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🤝 Contributing
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-We love contributors! ❤️
-Want to improve this website or add features? Just follow these steps:
+## Learn More
 
-1. **Fork** the repository
-2. **Create** your branch (`git checkout -b feature/YourFeature`)
-3. **Commit** your changes (`git commit -m 'Added something cool'`)
-4. **Push** to the branch (`git push origin feature/YourFeature`)
-5. \*\*Open a Pull Request\`
+To learn more about Next.js, take a look at the following resources:
 
-## 📢 Join CODEx
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-If you’re from GEC Siwan and want to be part of CODEx, fill out our [Membership Form](#) (Coming soon).
-Follow us on our socials for updates on events and sessions!
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 📄 License
+## Deploy on Vercel
 
-This project is open source and available under the [MIT License](LICENSE).
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
-## 🤖 Maintainers
-
-* \[Vikash Kumar](Maintainer)
-
-
-> **CODEx**: Code. Create. Contribute. Conquer. 🚀
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
