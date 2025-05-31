@@ -2,6 +2,11 @@ import Hero from "../components/LandingPage/hero";
 import About from "../components/LandingPage/about";
 import { ShootingStars } from "../components/ui/shooting-stars";
 import { StarsBackground } from "../components/ui/stars-backgrond";
+import TeamSection from "../components/TeamSection/team";
+import OpenSourcePage from "../components/openSourcePage/openSource";
+
+
+
 export default function Home() {
   return (
     <>
@@ -9,6 +14,10 @@ export default function Home() {
     <StarsBackground/>
     <Hero/>
     <About/>
+    <TeamSection />
+    <OpenSourcePage />
+    
+
     </>
   );
 }
