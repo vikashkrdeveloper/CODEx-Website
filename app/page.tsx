@@ -4,6 +4,8 @@ import { ShootingStars } from "../components/ui/shooting-stars";
 import { StarsBackground } from "../components/ui/stars-backgrond";
 import TeamSection from "../components/TeamSection/team";
 import OpenSourcePage from "../components/openSourcePage/openSource";
+import RegistrationPage from "../components/EventRegistration/RegistrationPage";
+
 
 
 
@@ -16,7 +18,8 @@ export default function Home() {
     <About/>
     <TeamSection />
     <OpenSourcePage />
-    
+    <RegistrationPage />
+
 
     </>
   );
