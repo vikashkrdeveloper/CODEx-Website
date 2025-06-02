@@ -36,7 +36,7 @@ export default function OpenSourceProjects() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white px-6 py-12">
       <h1 className="text-4xl font-bold text-center mb-10">
-        🚀 CODEX Open Source Projects
+        🚀 CODEx Open Source Projects
       </h1>
 
       <div className="flex justify-center gap-4 mb-8">
