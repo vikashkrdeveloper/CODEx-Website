@@ -6,7 +6,7 @@ import TeamSection from "../components/TeamSection/team";
 import OpenSourcePage from "../components/openSourcePage/openSource";
 import RegistrationPage from "../components/EventRegistration/RegistrationPage";
 import CodeOfConduct from "../components/codeOfConduct/code-of-conduct";
-
+import LeaderboardPage from"../components/leaderboard/page";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
     <OpenSourcePage />
     <RegistrationPage />
     <CodeOfConduct />
-
+    <LeaderboardPage/>
     </>
   );
 }

@@ -18,7 +18,7 @@ const teamMembers = [
     photo: "/image/ashish.jpg",
     github: "https://github.com/DevloperAshish17",
     linkedin: "https://www.linkedin.com/in/developerashish17",
-    instagram: "https://www.instagram.com/virat_fan_forever_0217",
+    instagram: "https://www.instagram.com/developerashish17",
   },
   {
     name: "Sandeep Kumar",
