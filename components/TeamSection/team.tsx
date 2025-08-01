@@ -18,7 +18,7 @@ const teamMembers = [
     photo: "/image/ashish.jpg",
     github: "https://github.com/DevloperAshish17",
     linkedin: "https://www.linkedin.com/in/developerashish17",
-    instagram: "https://www.instagram.com/virat_fan_forever_0217",
+    instagram: "https://www.instagram.com/developerashish17",
   },
   {
     name: "Sandeep Kumar",
@@ -28,14 +28,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/sandeep-kumar-b9674829a/",
     instagram: "https://www.instagram.com/",
   },
-  {
-    name: "Prayag Sagar",
-    role: "Events & Outreach Head",
-    photo: "/image/prayag.jpeg",
-    github: "https://github.com/sandeep",
-    linkedin: "https://linkedin.com/in/sandeep",
-    instagram: "https://instagram.com/sandeep",
-  },
+
   {
     name: "Rajesh Kumar",
     role: "Content & Social Media Lead",
@@ -44,14 +37,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/rajesh-kumar-baitha-4aa5672ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://www.instagram.com/_rajak.rajesh.09.?utm_source=qr&igsh=azZzb2Z0azljMjY3",
   },
-  {
-    name: "Sachin Kumar",
-    role: "Design & Media Lead",
-    photo: "/image/sachin.jpeg",
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/in/",
-    instagram: "https://instagram.com/",
-  },
+  
   {
     name: "Ayush Kumar",
     role: "Media & Publicity Lead",
@@ -61,19 +47,11 @@ const teamMembers = [
     instagram: "https://instagram.com/",
   },
   {
-    name: "Deepak Sharma",
+    name: "Raushan Kumar",
     role: "Community & Collaboration Lead",
-    photo: "/image/Deepak.jpg",
+    photo: "/image/Raushan.jpg",
     github: "https://github.com/",
     linkedin: "https://www.linkedin.com/in/deepak-kumar-prasad-8660872aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    instagram: "https://instagram.com/",
-  },
-  {
-    name: "Rohit Kumar",
-    role: "Documentation & Resource Manager",
-    photo: "/image/Rohit.jpg",
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/in/",
     instagram: "https://instagram.com/",
   },
 ];
