@@ -1,6 +1,6 @@
 'use client';
 
-import Head from "next/head";
+import Head from 'next/head';
 
 export default function CodeOfConduct() {
   return (
@@ -20,20 +20,42 @@ export default function CodeOfConduct() {
           </p>
 
           <ul className="space-y-4 text-gray-200 list-disc pl-6">
-            <li><strong>Be respectful</strong> – Treat others with kindness, patience, and empathy.</li>
-            <li><strong>No hate speech</strong> – Any form of discrimination or harassment will not be tolerated.</li>
-            <li><strong>Everyone is welcome</strong> – We celebrate diversity and encourage contributions from all.</li>
             <li>
-              <strong>Use inclusive language</strong> – Avoid slang, jargon, or anything that could alienate others.
+              <strong>Be respectful</strong> – Treat others with kindness, patience, and empathy.
             </li>
             <li>
-              <strong>Help others</strong> – Encourage first-timers and support peers who are learning.
+              <strong>No hate speech</strong> – Any form of discrimination or harassment will not be
+              tolerated.
             </li>
             <li>
-              <strong>Report issues</strong> – If you see something that violates these rules, report it to the moderators immediately.
+              <strong>Everyone is welcome</strong> – We celebrate diversity and encourage
+              contributions from all.
             </li>
             <li>
-              <strong>Follow the <a href="https://www.contributor-covenant.org/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline">Contributor Covenant</a></strong> – Our conduct is inspired by this community-standard guide.
+              <strong>Use inclusive language</strong> – Avoid slang, jargon, or anything that could
+              alienate others.
+            </li>
+            <li>
+              <strong>Help others</strong> – Encourage first-timers and support peers who are
+              learning.
+            </li>
+            <li>
+              <strong>Report issues</strong> – If you see something that violates these rules,
+              report it to the moderators immediately.
+            </li>
+            <li>
+              <strong>
+                Follow the{' '}
+                <a
+                  href="https://www.contributor-covenant.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-400 hover:underline"
+                >
+                  Contributor Covenant
+                </a>
+              </strong>{' '}
+              – Our conduct is inspired by this community-standard guide.
             </li>
           </ul>
 

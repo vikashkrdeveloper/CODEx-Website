@@ -1,26 +1,26 @@
 // pages/register.tsx
 'use client';
 
-import Head from "next/head";
-import { useState } from "react";
+import Head from 'next/head';
+import { useState } from 'react';
 
 export default function Register() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    event: "",
+    name: '',
+    email: '',
+    event: '',
   });
 
-  const googleFormUrl = "https://forms.gle/YOUR_GOOGLE_FORM_LINK"; // Replace this with actual form link
+  const googleFormUrl = 'https://forms.gle/YOUR_GOOGLE_FORM_LINK'; // Replace this with actual form link
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.open(googleFormUrl, "_blank");
+    window.open(googleFormUrl, '_blank');
   };
 
   return (

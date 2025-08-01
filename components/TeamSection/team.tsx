@@ -5,54 +5,56 @@ import Image from 'next/image';
 
 const teamMembers = [
   {
-    name: "Vikash Kumar",
-    role: "President",
-    photo: "/image/vikash.jpeg",
-    github: "https://github.com/vikashkrdeveloper",
-    linkedin: "https://www.linkedin.com/in/vikashkrdeveloper",
-    instagram: "https://www.instagram.com/vikashkrdeveloper",
+    name: 'Vikash Kumar',
+    role: 'President',
+    photo: '/image/vikash.jpeg',
+    github: 'https://github.com/vikashkrdeveloper',
+    linkedin: 'https://www.linkedin.com/in/vikashkrdeveloper',
+    instagram: 'https://www.instagram.com/vikashkrdeveloper',
   },
   {
-    name: "Ashish Kumar",
-    role: "Vice President",
-    photo: "/image/ashish.jpg",
-    github: "https://github.com/DevloperAshish17",
-    linkedin: "https://www.linkedin.com/in/developerashish17",
-    instagram: "https://www.instagram.com/developerashish17",
+    name: 'Ashish Kumar',
+    role: 'Vice President',
+    photo: '/image/ashish.jpg',
+    github: 'https://github.com/DevloperAshish17',
+    linkedin: 'https://www.linkedin.com/in/developerashish17',
+    instagram: 'https://www.instagram.com/developerashish17',
   },
   {
-    name: "Sandeep Kumar",
-    role: "Technical Head",
-    photo: "/image/sandeep.jpeg",
-    github: "https://github.com/sandeepkumar23f/",
-    linkedin: "https://www.linkedin.com/in/sandeep-kumar-b9674829a/",
-    instagram: "https://www.instagram.com/",
+    name: 'Sandeep Kumar',
+    role: 'Technical Head',
+    photo: '/image/sandeep.jpeg',
+    github: 'https://github.com/sandeepkumar23f/',
+    linkedin: 'https://www.linkedin.com/in/sandeep-kumar-b9674829a/',
+    instagram: 'https://www.instagram.com/',
   },
 
   {
-    name: "Rajesh Kumar",
-    role: "Content & Social Media Lead",
-    photo: "/image/rajesh.jpg",
-    github: "https://github.com/Rajeshkumarbaitha",
-    linkedin: "https://www.linkedin.com/in/rajesh-kumar-baitha-4aa5672ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    instagram: "https://www.instagram.com/_rajak.rajesh.09.?utm_source=qr&igsh=azZzb2Z0azljMjY3",
+    name: 'Rajesh Kumar',
+    role: 'Content & Social Media Lead',
+    photo: '/image/rajesh.jpg',
+    github: 'https://github.com/Rajeshkumarbaitha',
+    linkedin:
+      'https://www.linkedin.com/in/rajesh-kumar-baitha-4aa5672ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://www.instagram.com/_rajak.rajesh.09.?utm_source=qr&igsh=azZzb2Z0azljMjY3',
   },
-  
+
   {
-    name: "Ayush Kumar",
-    role: "Media & Publicity Lead",
-    photo: "/image/Ayush.jpg",
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/in/",
-    instagram: "https://instagram.com/",
+    name: 'Ayush Kumar',
+    role: 'Media & Publicity Lead',
+    photo: '/image/Ayush.jpg',
+    github: 'https://github.com/',
+    linkedin: 'https://linkedin.com/in/',
+    instagram: 'https://instagram.com/',
   },
   {
-    name: "Raushan Kumar",
-    role: "Community & Collaboration Lead",
-    photo: "/image/Raushan.jpg",
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/in/deepak-kumar-prasad-8660872aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    instagram: "https://instagram.com/",
+    name: 'Raushan Kumar',
+    role: 'Community & Collaboration Lead',
+    photo: '/image/Raushan.jpg',
+    github: 'https://github.com/',
+    linkedin:
+      'https://www.linkedin.com/in/deepak-kumar-prasad-8660872aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    instagram: 'https://instagram.com/',
   },
 ];
 
@@ -89,17 +91,35 @@ export default function TeamPage() {
               <div className="flex justify-center gap-4 sm:gap-5 mt-4">
                 <a href={member.github} target="_blank" rel="noreferrer">
                   <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700">
-                    <Image src="/icons/github.svg" alt="GitHub" width={20} height={20} className="invert" />
+                    <Image
+                      src="/icons/github.svg"
+                      alt="GitHub"
+                      width={20}
+                      height={20}
+                      className="invert"
+                    />
                   </div>
                 </a>
                 <a href={member.linkedin} target="_blank" rel="noreferrer">
                   <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600">
-                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={20} height={20} className="invert" />
+                    <Image
+                      src="/icons/linkedin.svg"
+                      alt="LinkedIn"
+                      width={20}
+                      height={20}
+                      className="invert"
+                    />
                   </div>
                 </a>
                 <a href={member.instagram} target="_blank" rel="noreferrer">
                   <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-r from-purple-600 to-pink-600">
-                    <Image src="/icons/instagram.svg" alt="Instagram" width={20} height={20} className="invert" />
+                    <Image
+                      src="/icons/instagram.svg"
+                      alt="Instagram"
+                      width={20}
+                      height={20}
+                      className="invert"
+                    />
                   </div>
                 </a>
               </div>

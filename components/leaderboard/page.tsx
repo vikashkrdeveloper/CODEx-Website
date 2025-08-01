@@ -15,9 +15,7 @@ export default function Leaderboard() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white px-6 py-12">
-      <h1 className="text-4xl font-bold text-center mb-10">
-        🏆 CODEx Contributor Leaderboard
-      </h1>
+      <h1 className="text-4xl font-bold text-center mb-10">🏆 CODEx Contributor Leaderboard</h1>
 
       <div className="max-w-2xl mx-auto space-y-4">
         {sorted.map((person, index) => (
