@@ -4,10 +4,10 @@ import React from 'react';
 
 const contributors = [
   { name: 'Ashish Kumar', contributions: 28 },
-  { name: 'Vikash Ranjan', contributions: 22 },
-  { name: 'Pooja Sharma', contributions: 17 },
-  { name: 'Satyam Gupta', contributions: 14 },
-  { name: 'Anjali Mishra', contributions: 12 },
+  { name: 'Rajesh Kumar', contributions: 22 },
+  { name: 'Sandeep Kumar', contributions: 17 },
+  { name: 'Ayush Kumar', contributions: 14 },
+  { name: 'Raushan Kumar', contributions: 12 },
 ];
 
 export default function Leaderboard() {
