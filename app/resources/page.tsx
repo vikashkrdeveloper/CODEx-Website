@@ -1,6 +1,6 @@
 'use client';
 
-import ResourceCard from "@/components/resources/ResourceCard";
+import ResourceCard from "@/components/TeamSection/resources/ResourceCard";
 
 const resources = [
   {
