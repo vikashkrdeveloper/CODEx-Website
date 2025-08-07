@@ -57,7 +57,7 @@ export default function ProblemPage() {
           </select>
         </div>
 
-        <CodeEditor language="cpp" value={code} onChange={(value) => setCode(value || '')} />
+        <CodeEditor language={languageMap[languageId]} value={code} onChange={(value) => setCode(value || '')} />
 
         <div className="mt-4 flex gap-3">
           <button
