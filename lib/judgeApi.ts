@@ -26,6 +26,15 @@ export async function runCode(sourceCode: string, languageId: number, stdin = ''
     }),
   });
 
+  if (!response.ok) {
+    let errorBody;
+    try {
+      errorBody = await response.json();
+    } catch (e) {
+      errorBody = await response.text();
+    }
+    throw new Error(`Judge0 API error: ${response.status} ${response.statusText} - ${JSON.stringify(errorBody)}`);
+  }
   const result = await response.json();
   return result;
 }
