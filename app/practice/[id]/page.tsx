@@ -17,11 +17,23 @@ export default function ProblemPage() {
     try {
       const result = await runCode(code, languageId);
       if (result.stderr) {
-        setOutput(atob(result.stderr));
+        try {
+          setOutput(atob(result.stderr));
+        } catch (e) {
+          setOutput('Invalid output encoding.');
+        }
       } else if (result.compile_output) {
-        setOutput(atob(result.compile_output));
+        try {
+          setOutput(atob(result.compile_output));
+        } catch (e) {
+          setOutput('Invalid output encoding.');
+        }
       } else {
-        setOutput(atob(result.stdout));
+        try {
+          setOutput(atob(result.stdout));
+        } catch (e) {
+          setOutput('Invalid output encoding.');
+        }
       }
     } catch (err) {
       console.error(err);
