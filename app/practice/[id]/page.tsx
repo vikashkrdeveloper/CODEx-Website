@@ -3,12 +3,18 @@
 import { useState } from 'react';
 import CodeEditor from '@/components/practice/CodeEditor';
 import { runCode } from '@/lib/judgeApi';
+import { saveSubmission } from '@/lib/ubmissionStore';
+import { v4 as uuidv4 } from 'uuid';
+import { useParams } from 'next/navigation';
 
 export default function ProblemPage() {
+  const params = useParams();
+  const id = params?.id as string;
+
   const [code, setCode] = useState('');
   const [output, setOutput] = useState('');
   const [isRunning, setIsRunning] = useState(false);
-  const [languageId, setLanguageId] = useState(54); // default C++
+  const [languageId, setLanguageId] = useState(54); // Default: C++
 
   const handleRun = async () => {
     setIsRunning(true);
@@ -16,13 +22,27 @@ export default function ProblemPage() {
 
     try {
       const result = await runCode(code, languageId);
+      let finalOutput = '';
+
       if (result.stderr) {
-        setOutput(atob(result.stderr));
+        finalOutput = atob(result.stderr);
       } else if (result.compile_output) {
-        setOutput(atob(result.compile_output));
+        finalOutput = atob(result.compile_output);
       } else {
-        setOutput(atob(result.stdout));
+        finalOutput = atob(result.stdout);
       }
+
+      setOutput(finalOutput);
+
+      saveSubmission({
+        id: uuidv4(),
+        problemId: id,
+        code,
+        languageId,
+        languageName: getLangName(languageId),
+        output: finalOutput,
+        timestamp: new Date().toLocaleString(),
+      });
     } catch (err) {
       console.error(err);
       setOutput('Error running code.');
@@ -31,10 +51,26 @@ export default function ProblemPage() {
     setIsRunning(false);
   };
 
+  function getLangName(id: number) {
+    switch (id) {
+      case 54:
+        return 'C++';
+      case 71:
+        return 'Python';
+      case 62:
+        return 'Java';
+      case 63:
+        return 'JavaScript';
+      default:
+        return 'Unknown';
+    }
+  }
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white px-6 py-12 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6">Problem #1</h1>
+      <h1 className="text-4xl font-bold mb-6">Problem #{id}</h1>
 
+      {/* Problem Description */}
       <section className="bg-gray-900 border border-gray-700 rounded-xl p-6 shadow-md mb-6">
         <h2 className="text-2xl font-semibold text-yellow-400 mb-4">Problem Statement</h2>
         <p>
@@ -42,7 +78,9 @@ export default function ProblemPage() {
         </p>
       </section>
 
+      {/* Code Editor + Controls */}
       <section className="bg-gray-900 border border-gray-700 rounded-xl p-6 shadow-md">
+        {/* Language Selector */}
         <div className="mb-4">
           <label className="mr-2 font-semibold">Language:</label>
           <select
@@ -57,8 +95,14 @@ export default function ProblemPage() {
           </select>
         </div>
 
-        <CodeEditor language="cpp" value={code} onChange={(value) => setCode(value || '')} />
+        {/* Code Editor */}
+        <CodeEditor
+          language={getLangName(languageId).toLowerCase()}
+          value={code}
+          onChange={(value) => setCode(value || '')}
+        />
 
+        {/* Run & Submit Buttons */}
         <div className="mt-4 flex gap-3">
           <button
             onClick={handleRun}
@@ -76,6 +120,7 @@ export default function ProblemPage() {
           </button>
         </div>
 
+        {/* Output Section */}
         <div className="mt-4 p-4 bg-gray-800 rounded-md min-h-[80px]">
           <h3 className="text-yellow-400 mb-2">Output:</h3>
           <pre>{output}</pre>
