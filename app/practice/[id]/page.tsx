@@ -94,14 +94,14 @@ export default function ProblemPage() {
             <option value={63}>JavaScript</option>
           </select>
         </div>
-
+        
         {/* Code Editor */}
         <CodeEditor
           language={getLangName(languageId).toLowerCase()}
           value={code}
           onChange={(value) => setCode(value || '')}
         />
-
+        
         {/* Run & Submit Buttons */}
         <div className="mt-4 flex gap-3">
           <button
